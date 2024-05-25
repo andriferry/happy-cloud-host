@@ -22,5 +22,16 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 'latest'
+  },
+  rules: {
+    eqeqeq: "off",
+    "no-duplicate-imports": "error",
+    "no-empty-pattern": "error",
+    "no-import-assign": "error",
+    "no-var": "error",
+    "object-shorthand": "error",
+    "no-unused-vars": "error",
+    "prefer-const": ["error", { "ignoreReadBeforeAssign": true }]
+
   }
 }

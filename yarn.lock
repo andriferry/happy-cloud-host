@@ -322,6 +322,13 @@
   resolved "https://registry.npmjs.org/@colors/colors/-/colors-1.5.0.tgz"
   integrity sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==
 
+"@cspotcode/source-map-support@^0.8.0":
+  version "0.8.1"
+  resolved "https://registry.npmjs.org/@cspotcode/source-map-support/-/source-map-support-0.8.1.tgz"
+  integrity sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==
+  dependencies:
+    "@jridgewell/trace-mapping" "0.3.9"
+
 "@cypress/request@^3.0.0":
   version "3.0.1"
   resolved "https://registry.npmjs.org/@cypress/request/-/request-3.0.1.tgz"
@@ -467,7 +474,7 @@
     "@jridgewell/sourcemap-codec" "^1.4.10"
     "@jridgewell/trace-mapping" "^0.3.24"
 
-"@jridgewell/resolve-uri@^3.1.0":
+"@jridgewell/resolve-uri@^3.0.3", "@jridgewell/resolve-uri@^3.1.0":
   version "3.1.2"
   resolved "https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz"
   integrity sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==
@@ -489,6 +496,14 @@
   dependencies:
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
+
+"@jridgewell/trace-mapping@0.3.9":
+  version "0.3.9"
+  resolved "https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.9.tgz"
+  integrity sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==
+  dependencies:
+    "@jridgewell/resolve-uri" "^3.0.3"
+    "@jridgewell/sourcemap-codec" "^1.4.10"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -571,6 +586,26 @@
   version "0.27.8"
   resolved "https://registry.npmjs.org/@sinclair/typebox/-/typebox-0.27.8.tgz"
   integrity sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==
+
+"@tsconfig/node10@^1.0.7":
+  version "1.0.11"
+  resolved "https://registry.npmjs.org/@tsconfig/node10/-/node10-1.0.11.tgz"
+  integrity sha512-DcRjDCujK/kCk/cUe8Xz8ZSpm8mS3mNNpta+jGCA6USEDfktlNvm1+IuZ9eTcDbNk41BHwpHHeW+N1lKCz4zOw==
+
+"@tsconfig/node12@^1.0.7":
+  version "1.0.11"
+  resolved "https://registry.npmjs.org/@tsconfig/node12/-/node12-1.0.11.tgz"
+  integrity sha512-cqefuRsh12pWyGsIoBKJA9luFu3mRxCA+ORZvA4ktLSzIuCUtWVxGIuXigEwO5/ywWFMZ2QEGKWvkZG1zDMTag==
+
+"@tsconfig/node14@^1.0.0":
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/@tsconfig/node14/-/node14-1.0.3.tgz"
+  integrity sha512-ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoYlM2nc6388Fq5jcXyr5mRsqViLx/GJYdoL0bfXD8nmF+Zn/Iow==
+
+"@tsconfig/node16@^1.0.2":
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/@tsconfig/node16/-/node16-1.0.4.tgz"
+  integrity sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==
 
 "@tsconfig/node20@^20.1.4":
   version "20.1.4"
@@ -994,6 +1029,11 @@
   dependencies:
     vue-demi ">=0.14.7"
 
+"@yr/monotone-cubic-spline@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/@yr/monotone-cubic-spline/-/monotone-cubic-spline-1.0.3.tgz"
+  integrity sha512-FQXkOta0XBSUPHndIKON2Y9JeQz5ZeMqLYZVVK93FliNBFm7LNMIZmY6FrMEB9XPcDbE2bekMbZD6kzDkxwYjA==
+
 abbrev@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/abbrev/-/abbrev-2.0.0.tgz"
@@ -1004,12 +1044,12 @@ acorn-jsx@^5.3.2:
   resolved "https://registry.npmjs.org/acorn-jsx/-/acorn-jsx-5.3.2.tgz"
   integrity sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==
 
-acorn-walk@^8.3.2:
+acorn-walk@^8.1.1, acorn-walk@^8.3.2:
   version "8.3.2"
   resolved "https://registry.npmjs.org/acorn-walk/-/acorn-walk-8.3.2.tgz"
   integrity sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==
 
-"acorn@^6.0.0 || ^7.0.0 || ^8.0.0", acorn@^8.11.3, acorn@^8.9.0:
+"acorn@^6.0.0 || ^7.0.0 || ^8.0.0", acorn@^8.11.3, acorn@^8.4.1, acorn@^8.9.0:
   version "8.11.3"
   resolved "https://registry.npmjs.org/acorn/-/acorn-8.11.3.tgz"
   integrity sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==
@@ -1103,10 +1143,28 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
+apexcharts@^3.26.0, apexcharts@^3.49.1:
+  version "3.49.1"
+  resolved "https://registry.npmjs.org/apexcharts/-/apexcharts-3.49.1.tgz"
+  integrity sha512-MqGtlq/KQuO8j0BBsUJYlRG8VBctKwYdwuBtajHgHTmSgUU3Oai+8oYN/rKCXwXzrUlYA+GiMgotAIbXY2BCGw==
+  dependencies:
+    "@yr/monotone-cubic-spline" "^1.0.3"
+    svg.draggable.js "^2.2.2"
+    svg.easing.js "^2.0.0"
+    svg.filter.js "^2.0.2"
+    svg.pathmorphing.js "^0.1.3"
+    svg.resize.js "^1.4.3"
+    svg.select.js "^3.0.1"
+
 arch@^2.2.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/arch/-/arch-2.2.0.tgz"
   integrity sha512-Of/R0wqp83cgHozfIYLbBMnej79U/SVGOOyuB3VVFv1NRM/PSFMK12x9KVtiYzJqmnU5WR2qp0Z5rHb7sWGnFQ==
+
+arg@^4.1.0:
+  version "4.1.3"
+  resolved "https://registry.npmjs.org/arg/-/arg-4.1.3.tgz"
+  integrity sha512-58S9QDqG0Xx27YwPSt9fJxivjYl432YCwfDMfZ+71RAqUrZef7LrKQZ3LHLOwCS4FLNBplP533Zx895SeOCHvA==
 
 arg@^5.0.2:
   version "5.0.2"
@@ -1506,6 +1564,11 @@ core-util-is@1.0.2:
   resolved "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz"
   integrity sha512-3lqz5YjWTYnW6dlDa5TLaTCcShfar1e40rmcJVwCBJC6mWlFuj0eCHIElmG1g5kyuJ/GD+8Wn4FFCcz4gJPfaQ==
 
+create-require@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/create-require/-/create-require-1.1.1.tgz"
+  integrity sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
+
 cross-spawn@^7.0.0, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
   version "7.0.3"
   resolved "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz"
@@ -1700,6 +1763,11 @@ diff-sequences@^29.6.3:
   version "29.6.3"
   resolved "https://registry.npmjs.org/diff-sequences/-/diff-sequences-29.6.3.tgz"
   integrity sha512-EjePK1srD3P08o2j4f0ExnylqRs5B9tJjcp9t1krH2qRi8CCdsYfwe9JgSLurFBWwq4uOlipzfk5fHNvwFKr8Q==
+
+diff@^4.0.1:
+  version "4.0.2"
+  resolved "https://registry.npmjs.org/diff/-/diff-4.0.2.tgz"
+  integrity sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==
 
 dir-glob@^3.0.1:
   version "3.0.1"
@@ -2489,6 +2557,11 @@ human-signals@^5.0.0:
   resolved "https://registry.npmjs.org/human-signals/-/human-signals-5.0.0.tgz"
   integrity sha512-AXcZb6vzzrFAUE61HnN4mpLqd/cSIwNQjtNWR0euPm6y0iqx3G4gOXaIDdtdDwZmhwe82LA6+zinmW4UBWVePQ==
 
+husky@^9.0.11:
+  version "9.0.11"
+  resolved "https://registry.npmjs.org/husky/-/husky-9.0.11.tgz"
+  integrity sha512-AB6lFlbwwyIqMdHYhwPe+kjOC3Oc5P3nThEoW/AaO2BX3vJDjWPFxYLxokUZOo6RNX20He3AaT8sESs9NJcmEw==
+
 iconv-lite@0.6.3:
   version "0.6.3"
   resolved "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.6.3.tgz"
@@ -2933,6 +3006,11 @@ magic-string@^0.30.10, magic-string@^0.30.4, magic-string@^0.30.5:
   integrity sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.4.15"
+
+make-error@^1.1.1:
+  version "1.3.6"
+  resolved "https://registry.npmjs.org/make-error/-/make-error-1.3.6.tgz"
+  integrity sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==
 
 map-stream@~0.1.0:
   version "0.1.0"
@@ -3944,6 +4022,61 @@ svg-tags@^1.0.0:
   resolved "https://registry.npmjs.org/svg-tags/-/svg-tags-1.0.0.tgz"
   integrity sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==
 
+svg.draggable.js@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.npmjs.org/svg.draggable.js/-/svg.draggable.js-2.2.2.tgz"
+  integrity sha512-JzNHBc2fLQMzYCZ90KZHN2ohXL0BQJGQimK1kGk6AvSeibuKcIdDX9Kr0dT9+UJ5O8nYA0RB839Lhvk4CY4MZw==
+  dependencies:
+    svg.js "^2.0.1"
+
+svg.easing.js@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/svg.easing.js/-/svg.easing.js-2.0.0.tgz"
+  integrity sha512-//ctPdJMGy22YoYGV+3HEfHbm6/69LJUTAqI2/5qBvaNHZ9uUFVC82B0Pl299HzgH13rKrBgi4+XyXXyVWWthA==
+  dependencies:
+    svg.js ">=2.3.x"
+
+svg.filter.js@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/svg.filter.js/-/svg.filter.js-2.0.2.tgz"
+  integrity sha512-xkGBwU+dKBzqg5PtilaTb0EYPqPfJ9Q6saVldX+5vCRy31P6TlRCP3U9NxH3HEufkKkpNgdTLBJnmhDHeTqAkw==
+  dependencies:
+    svg.js "^2.2.5"
+
+svg.js@^2.0.1, svg.js@^2.2.5, svg.js@^2.4.0, svg.js@^2.6.5, svg.js@>=2.3.x:
+  version "2.7.1"
+  resolved "https://registry.npmjs.org/svg.js/-/svg.js-2.7.1.tgz"
+  integrity sha512-ycbxpizEQktk3FYvn/8BH+6/EuWXg7ZpQREJvgacqn46gIddG24tNNe4Son6omdXCnSOaApnpZw6MPCBA1dODA==
+
+svg.pathmorphing.js@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.npmjs.org/svg.pathmorphing.js/-/svg.pathmorphing.js-0.1.3.tgz"
+  integrity sha512-49HWI9X4XQR/JG1qXkSDV8xViuTLIWm/B/7YuQELV5KMOPtXjiwH4XPJvr/ghEDibmLQ9Oc22dpWpG0vUDDNww==
+  dependencies:
+    svg.js "^2.4.0"
+
+svg.resize.js@^1.4.3:
+  version "1.4.3"
+  resolved "https://registry.npmjs.org/svg.resize.js/-/svg.resize.js-1.4.3.tgz"
+  integrity sha512-9k5sXJuPKp+mVzXNvxz7U0uC9oVMQrrf7cFsETznzUDDm0x8+77dtZkWdMfRlmbkEEYvUn9btKuZ3n41oNA+uw==
+  dependencies:
+    svg.js "^2.6.5"
+    svg.select.js "^2.1.2"
+
+svg.select.js@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.npmjs.org/svg.select.js/-/svg.select.js-2.1.2.tgz"
+  integrity sha512-tH6ABEyJsAOVAhwcCjF8mw4crjXSI1aa7j2VQR8ZuJ37H2MBUbyeqYr5nEO7sSN3cy9AR9DUwNg0t/962HlDbQ==
+  dependencies:
+    svg.js "^2.2.5"
+
+svg.select.js@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npmjs.org/svg.select.js/-/svg.select.js-3.0.1.tgz"
+  integrity sha512-h5IS/hKkuVCbKSieR9uQCj9w+zLHoPh+ce19bBYyqF53g6mnPB8sAtIbe1s9dh2S2fCmYX2xel1Ln3PJBbK4kw==
+  dependencies:
+    svg.js "^2.6.5"
+
 symbol-tree@^3.2.4:
   version "3.2.4"
   resolved "https://registry.npmjs.org/symbol-tree/-/symbol-tree-3.2.4.tgz"
@@ -4078,6 +4211,25 @@ ts-interface-checker@^0.1.9:
   resolved "https://registry.npmjs.org/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz"
   integrity sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
 
+ts-node@^10.9.2, ts-node@>=9.0.0:
+  version "10.9.2"
+  resolved "https://registry.npmjs.org/ts-node/-/ts-node-10.9.2.tgz"
+  integrity sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==
+  dependencies:
+    "@cspotcode/source-map-support" "^0.8.0"
+    "@tsconfig/node10" "^1.0.7"
+    "@tsconfig/node12" "^1.0.7"
+    "@tsconfig/node14" "^1.0.0"
+    "@tsconfig/node16" "^1.0.2"
+    acorn "^8.4.1"
+    acorn-walk "^8.1.1"
+    arg "^4.1.0"
+    create-require "^1.1.0"
+    diff "^4.0.1"
+    make-error "^1.1.1"
+    v8-compile-cache-lib "^3.0.1"
+    yn "3.1.1"
+
 tslib@^2.1.0, tslib@^2.6.2:
   version "2.6.2"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.6.2.tgz"
@@ -4117,7 +4269,7 @@ type-fest@^0.21.3:
   resolved "https://registry.npmjs.org/type-fest/-/type-fest-0.21.3.tgz"
   integrity sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==
 
-typescript@*, typescript@>=4.2.0, typescript@>=4.4.4, typescript@>=4.7.4, typescript@~5.4.0:
+typescript@*, typescript@>=2.7, typescript@>=4.2.0, typescript@>=4.4.4, typescript@>=4.7.4, typescript@~5.4.0:
   version "5.4.5"
   resolved "https://registry.npmjs.org/typescript/-/typescript-5.4.5.tgz"
   integrity sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==
@@ -4179,6 +4331,11 @@ uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
+
+v8-compile-cache-lib@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npmjs.org/v8-compile-cache-lib/-/v8-compile-cache-lib-3.0.1.tgz"
+  integrity sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==
 
 verror@1.10.0:
   version "1.10.0"
@@ -4284,6 +4441,11 @@ vitest@^1.4.0:
     vite "^5.0.0"
     vite-node "1.6.0"
     why-is-node-running "^2.2.2"
+
+vue-apexcharts@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.npmjs.org/vue-apexcharts/-/vue-apexcharts-1.6.2.tgz"
+  integrity sha512-9HS3scJwWgKjmkcWIf+ndNDR0WytUJD8Ju0V2ZYcjYtlTLwJAf2SKUlBZaQTkDmwje/zMgulvZRi+MXmi+WkKw==
 
 vue-component-type-helpers@^2.0.0:
   version "2.0.19"
@@ -4496,6 +4658,11 @@ yauzl@^2.10.0:
   dependencies:
     buffer-crc32 "~0.2.3"
     fd-slicer "~1.1.0"
+
+yn@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.npmjs.org/yn/-/yn-3.1.1.tgz"
+  integrity sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 
 yocto-queue@^0.1.0:
   version "0.1.0"
