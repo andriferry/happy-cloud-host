@@ -34,7 +34,7 @@ module.exports = {
     'check-file/filename-naming-convention': [
       'error',
       {
-        'src/components/*.{js,ts,vue}': 'PASCAL_CASE'
+        'src/**/*.{vue}': 'PASCAL_CASE'
       }
     ]
   }
