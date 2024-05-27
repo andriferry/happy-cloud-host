@@ -34,13 +34,15 @@ module.exports = {
     'check-file/filename-naming-convention': [
       'error',
       {
-        // 'src/components/*.{js,ts,vue}': 'PASCAL_CASE'
+        'src/components/*.{,vue}': 'PASCAL_CASE',
+        'src/layouts/*.{,vue}': 'PASCAL_CASE',
+        'src/types/*.{,ts}': 'CAMEL_CASE',
+        'src/stores/*.{,ts}': 'CAMEL_CASE',
 
 
-        'src/components/*.{vue}': 'PASCAL_CASE',
-        'src/layouts/*.{vue}': 'PASCAL_CASE',
-        'src/types/*.{ts}': 'CAMEL_CASE',
-        'src/stores/*.{ts}': 'CAMEL_CASE'
+        //  'src/components/*.{vue}': 'PASCAL_CASE',
+        // 'src/layouts/*.{vue}': 'PASCAL_CASE',
+        // 'src/layouts/*.{vue}': 'PASCAL_CASE'
       }
     ]
   }
