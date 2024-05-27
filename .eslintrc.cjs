@@ -35,6 +35,7 @@ module.exports = {
       'error',
       {
         'src/**/*.{vue}': 'PASCAL_CASE'
+        // /src/**/*.{vue,js,ts,jsx,tsx}
       }
     ]
   }
