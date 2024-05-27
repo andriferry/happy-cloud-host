@@ -1,13 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 import daisyui from 'daisyui'
+const { addDynamicIconSelectors } = require('@iconify/tailwind');
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {}
   },
-  plugins: [daisyui],
+  plugins: [
+    daisyui,
+    addDynamicIconSelectors(),
+  ],
   daisyui: {
-    themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
+    themes: [
+      {
+        light: {
+          ...require("daisyui/src/theming/themes")["light"],
+          primary: "#35a1ea",
+          secondary: "#7dd3fc",
+        },
+      }
+    ], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
     darkTheme: "light", // name of one of the included themes for dark mode
     base: true, // applies background color and foreground color for root element by default
     styled: true, // include daisyUI colors and design decisions for all components

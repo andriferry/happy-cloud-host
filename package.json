@@ -21,6 +21,7 @@
     "apexcharts": "^3.49.1",
     "pinia": "^2.1.7",
     "ts-node": "^10.9.2",
+    "vee-validate": "^4.12.8",
     "vue": "^3.4.21",
     "vue-apexcharts": "^1.6.2",
     "vue-router": "^4.3.0",
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",
+    "@iconify/tailwind": "^1.1.1",
     "@iconify/vue": "^4.1.2",
     "@rushstack/eslint-patch": "^1.8.0",
     "@tsconfig/node20": "^20.1.4",
