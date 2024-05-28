@@ -14,6 +14,21 @@ const menus = computed( () => {
       icon: route.name === 'vps' ? 'material-symbols:cloud-outline' : 'material-symbols:cloud',
       class: route.name === 'vps' ? 'bg-secondary': ''
     },
+    {
+      label: 'stats',
+      icon: route.name === 'stats' ? 'ion:pie-chart-outline' : 'ion:pie-chart-sharp',
+      class: route.name === 'stats' ? 'bg-secondary': ''
+    },
+    {
+      label: 'users',
+      icon: route.name === 'users' ? 'teenyicons:users-outline' : 'teenyicons:users-solid',
+      class: route.name === 'users' ? 'bg-secondary': ''
+    },
+    {
+      label: 'settings',
+      icon: route.name === 'settings' ? 'clarity:settings-line' : 'clarity:settings-solid',
+      class: route.name === 'settings' ? 'bg-secondary': ''
+    },
   ]
 })
 
@@ -32,11 +47,10 @@ const menus = computed( () => {
       <div class="mt-10 flex justify-center">
         <ul class="h-screen flex flex-col gap-10">
           <li v-for="data , index in menus" :key="index" class="flex justify-center">
-            <RouterLink :to="{name: data.label}" :class="data.class" class="p-1.5 rounded-lg">
+            <RouterLink :to="{name: data.label}" :class="data.class" class="p-1.5 transition duration-700 ease-in-out rounded-lg">
               <Icon :icon="data.icon" class="text-white text-4xl" />
             </RouterLink>
           </li>
-         
         </ul>
       
       </div>
