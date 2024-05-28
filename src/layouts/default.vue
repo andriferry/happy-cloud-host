@@ -69,7 +69,7 @@ const menus = computed( () => {
 
 
           <div class="flex justify-start">
-            <button @click="minimize = !minimize"  class="hover:bg-secondary transition duration-700 ease-in-out rounded-lg p-2">
+            <button class="hover:bg-secondary transition duration-700 ease-in-out rounded-lg p-2"  @click="minimize = !minimize">
               <Icon icon="ic:round-double-arrow" :class="{'rotate-180': minimize}" class="text-white text-4xl transition duration-700 ease-in-out"  />
             </button>
           </div>
