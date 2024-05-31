@@ -1,5 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="h-screen">This is Stats</div>
+  <div class="">This is Stats</div>
 </template>

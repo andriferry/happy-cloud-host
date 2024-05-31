@@ -3,8 +3,15 @@ import daisyui from 'daisyui'
 const { addDynamicIconSelectors } = require('@iconify/tailwind');
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  darkMode: ['selector', '[data-theme="dark"]'],
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        primaryLight: '#35a1ea',
+        primaryDark: '#475569',
+        softDark: "#94a3b8"
+      }
+    },
   },
   plugins: [
     daisyui,
@@ -17,11 +24,16 @@ export default {
           ...require("daisyui/src/theming/themes")["light"],
           primary: "#35a1ea",
           secondary: "#7dd3fc",
+          neutral: 'white',
+          // accent: ''
         },
+        // #a6adbb
         dark: {
           ...require("daisyui/src/theming/themes")["dark"],
-          primary: "black",
+          primary: "#2a323c",
           secondary: "#334155",
+          neutral: '#1d232a',
+          // accent: ''
         }
       }
     ], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]

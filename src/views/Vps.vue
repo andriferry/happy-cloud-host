@@ -1,5 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="h-screen">This is VPS</div>
+  <div class="">This is VPS</div>
 </template>
