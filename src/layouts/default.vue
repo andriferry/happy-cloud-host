@@ -109,7 +109,8 @@ onMounted( () => {
 
           <div class="flex justify-start">
             <button class="hover:bg-secondary transition duration-700 ease-in-out rounded-lg p-2"  @click="minimize = !minimize">
-              <Icon icon="ic:round-double-arrow" :class="{'rotate-180': minimize}" 
+              <Icon
+icon="ic:round-double-arrow" :class="{'rotate-180': minimize}" 
               class="text-white dark:text-softDark text-4xl transition duration-700 ease-in-out"  />
             </button>
           </div>
@@ -142,7 +143,7 @@ onMounted( () => {
           <div class="col-span-1 flex gap-3 justify-end items-center">
             <label class="swap swap-rotate mr-3">
 
-              <input type="checkbox" v-model="dark" @change="darkToggle" class="theme-controller"  />
+              <input v-model="dark" type="checkbox" class="theme-controller" @change="darkToggle"  />
 
              
               <Icon icon="ph:sun-bold" class="w-6 text-primaryDark dark:text-softDark swap-off h-6" />
