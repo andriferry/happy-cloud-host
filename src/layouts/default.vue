@@ -40,6 +40,36 @@ const menus = computed( () => {
 } )
 
 
+const userMenu = computed( () => {
+  return [
+    {
+      label: "Profile",
+      icon: "mdi:user-outline",
+      route: '/'
+    },
+    {
+      label: "Settings",
+      icon: "clarity:settings-line",
+      route: '/settings'
+    },
+    {
+      label: "Billing Plans",
+      icon: "hugeicons:invoice",
+      route: '/settings'
+    },
+    {
+      label: "Help",
+      icon: "material-symbols:help-outline",
+      route: '/settings'
+    },
+    {
+      label: "Pricing",
+      icon: "carbon:pricing-traditional",
+      route: '/settings'
+    }
+  ]
+})
+
 watch( dark, ( value: boolean ) => {
 
   if ( value ) {
@@ -176,7 +206,43 @@ icon="ic:round-double-arrow" :class="{'rotate-180': minimize}"
                       <span class="text-sm font-semibold text-white/75  dark:text-softDark">Admin</span>
                     </p>
                   </h3>
-                  <div class="divider divider-secondary"></div> 
+                  <div class="divider divider-secondary my-2" /> 
+
+                  <div class="text-white dark:text-softDark">
+                    <ul>
+                      <li v-for="data, index in userMenu.slice(0,3)" :key="index" class="hover:bg-secondary p-2 transition-all ease-out duration-700 rounded-lg">
+                        <RouterLink :to="data.route" class="flex items-center gap-3">
+                          <Icon :icon="data.icon" class="text-white dark:text-softDark text-2xl" />
+                          <p class="text-base font-semibold">
+                            {{ data.label }}
+                          </p>
+                        </RouterLink>
+                      </li>
+                    </ul>
+
+                    <div class="divider divider-secondary my-2" /> 
+                    <ul>
+                      <li v-for="data, index in userMenu.slice(3)" :key="index" class="hover:bg-secondary p-2 transition-all ease-out duration-700 rounded-lg">
+                        <RouterLink :to="data.route" class="flex items-center gap-3">
+                          <Icon :icon="data.icon" class="text-white dark:text-softDark text-2xl" />
+                          <p class="text-base font-semibold">
+                            {{ data.label }}
+                          </p>
+                        </RouterLink>
+                      </li>
+
+
+                      <li class="w-full  mt-3">
+                        <button class="btn  flex gap-3 items-center btn-block btn-sm">
+                          <span>Logout</span>
+                          <Icon icon="ic:baseline-logout" class=" dark:text-softDark text-xl" />
+                        </button>
+                      </li>
+
+                    </ul>
+                  </div>
+
+
                 </div>
               </div>
             </div>
