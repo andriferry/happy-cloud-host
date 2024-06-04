@@ -114,7 +114,7 @@ onMounted( () => {
 <template>
   <div class="bg-primary w-full transition-all  duration-700 ease-in-out h-screen flex">
 
-    <div :class="minimize ? 'w-[16%]': 'w-[5%]'" class="transition-all ease-out duration-300">
+    <div :class="minimize ? 'w-[16%]': 'w-[5%]'" class="transition-all hidden md:block ease-out duration-300">
       <div  class="transition-all  duration-700 ease-in-out h-screen flex flex-col px-2 py-10">
         <div class="flex justify-start items-center gap-5">
           <RouterLink to="/" class="rounded-xl flex items-center justify-center transition-all  duration-700 bg-white dark:bg-primaryDark p-1.5">
@@ -150,18 +150,27 @@ icon="ic:round-double-arrow" :class="{'rotate-180': minimize}"
     </div>
 
 
-    <div :class="minimize ? 'w-[85%]': 'w-[95%]'" class="transition-all ease-out duration-300">
-      <div class="transition  duration-700 ease-in-out bg-neutral h-screen rounded-l-[45px] p-10">
+    <div :class="minimize ? 'w-[85%]': ' w-full sm:w-[95%]'" class="transition-all ease-out duration-300">
+      <div class="transition  duration-700 ease-in-out bg-neutral h-screen sm:rounded-l-[45px] p-5 sm:p-10">
 
-        <div class="container items-center grid grid-cols-3 mb-5 py-2 gap-3">
-          <div class="col-span-1 flex items-center gap-3">
-            <Icon icon="streamline-emojis:cloud-2" class="text-5xl" /> 
+      <!-- Navbar -->
+        <div class="container drawer items-center grid grid-cols-3 mb-5 py-2 gap-3">
+          <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
+          <div class="col-span-2 drawer-content md:col-span-1 flex items-center gap-3">
+            <Icon icon="streamline-emojis:cloud-2" class="text-5xl hidden md:block" /> 
+            <label for="my-drawer-3" aria-label="open sidebar" class="block cursor-pointer md:hidden">
+              <Icon icon="heroicons-outline:menu-alt-2" class="text-3xl text-primaryDark dark:text-softDark" /> 
+            </label>
             <p class="text-2xl text-primaryDark dark:text-softDark  capitalize font-bold">
               {{ route.name }}
             </p>
+
+            <button class="block md:hidden">
+              <Icon icon="ion:search-sharp" class="text-xl text-primaryDark dark:text-softDark " />
+            </button>
           </div>
 
-          <div class="col-span-1">
+          <div class="col-span-1 hidden md:block">
             <div class="w-full">
               <label class="input input-bordered transition-all  duration-700 !ring-0 !outline-offset-0 !outline-none bg-slate-100 dark:bg-slate-700  border-0 rounded-full input-sm flex items-center gap-2 !h-[2.3rem] ">
                 <Icon icon="ion:search-sharp" class="w-5 h-5 opacity-50 " />
@@ -182,7 +191,7 @@ icon="ic:round-double-arrow" :class="{'rotate-180': minimize}"
              
 
             </label>
-            <p class="text-base opacity-75 font-bold text-primaryDark dark:text-softDark ">
+            <p class="text-base opacity-75 hidden md:block font-bold text-primaryDark dark:text-softDark ">
               Hi , John
             </p>
 
@@ -247,7 +256,17 @@ icon="ic:round-double-arrow" :class="{'rotate-180': minimize}"
               </div>
             </div>
           </div>
+
+          <div class="drawer-side">
+            <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label> 
+            <ul class="menu p-4 w-80 min-h-full bg-base-200">
+              <!-- Sidebar content here -->
+              <li><a>Sidebar Item 1</a></li>
+              <li><a>Sidebar Item 2</a></li>
+            </ul>
+          </div>
         </div>
+      <!-- Navbar -->
 
   
         <RouterView v-slot="{ Component }">
